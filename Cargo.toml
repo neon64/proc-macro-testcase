@@ -1,0 +1,13 @@
+[package]
+name = "macro_testcase"
+version = "0.1.0"
+authors = ["Chris Chamberlain <c.chamberlain@iinet.net.au>"]
+
+[dependencies]
+proc-macro2 = { version = "0.1", features = ["unstable"] }
+syn = { git = "https://github.com/dtolnay/syn", features = ["full", "parsing", "printing", "visit", "fold", "extra-traits"] }
+quote = { git = 'https://github.com/dtolnay/quote' }
+literalext = "0.1.0"
+
+[lib]
+proc-macro = true
